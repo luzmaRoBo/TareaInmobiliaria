@@ -1,0 +1,146 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: radial-gradient(circle, rgba(255,255,255,1) 14%, rgba(148,178,233,1) 96%);
+}
+body div{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+/*ESTILOS PARA EL HEADER*/
+header{
+    display: flex;
+    border-radius: 20px;
+	border: 3px solid #120751;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*div de la imagen del header*/
+header div:nth-of-type(1){
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+/*imagen del header*/
+header div img{
+    width: 80%;
+    border-radius: 100%;
+    padding: 10px;
+}
+/*texto del header*/
+header div:nth-of-type(2){
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3.5em;
+    text-align: center;
+    color: rgb(16, 5, 70);
+    font-variant-caps: small-caps;
+    text-decoration: underline;
+}
+/*TERMINO LOS ESTILOS DE HEADER*/
+
+/*ESTILOS DE LA PARTE CENTRAL*/
+header + div{
+    display: flex;
+    width: 100%;
+    column-gap: 5px;
+}
+/*ESTILOS DEL MENU DENTRO DE LA PARTE CENTRAL*/
+nav{
+    display: flex;
+    width: 15%;
+    border: 3px solid #120751;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+    
+}
+ul li a{
+    text-decoration: none;
+    border: 3px solid #120751;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color:rgb(9, 9, 88);
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+ul li a:hover{
+    background-color: #120751;
+    color: white;
+    font-size: 1.5em;
+}
+/*TERMNAN LOS ESTILOS DEL MENU*/
+/*ESTILOS DEL MAIN*/
+main{
+    width: 85%;
+    border: 3px solid #120751;
+    border-radius: 20px;
+    padding: 20px;
+}
+/*div de la imagen del inicio*/
+main  div{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center; 
+    align-items: center;
+    
+}
+/*imagen del main en el inicio*/
+main div img{
+    width: 50%;
+}
+/*seccion del main*/
+main section{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#resultados{
+    border: 3px solid #120751;
+    border-radius: 20px;
+    margin-left: 25px;
+    margin: 25px;
+    padding: 20px;
+    background-color: white;
+}
+#resultados p{
+    font-size: 1.5em;
+    text-align: justify;
+    font-weight: bolder;
+    padding-left: 20px;
+    color: black;
+}
+
+
+footer{
+    border-radius: 20px;
+	border: 3px solid #120751;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer p{
+    text-align: right;
+    color:  rgb(16, 5, 70);
+    font-size: 1.3em;
+    font-weight: bolder;
+    padding-right: 20px;
+    font-variant-caps: small-caps;
+}
