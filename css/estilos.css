@@ -128,8 +128,53 @@ main section{
     padding-left: 20px;
     color: black;
 }
+/*titulos de main*/
+h2{
+    font-size: 3em;
+    color: rgb(9, 9, 88);
+    text-align: center;
+    font-variant-caps: small-caps;
+    text-decoration: underline;
+}
+/*estilos de los formularios*/
+#formulario {
+    width: 90%;
+    padding: 20px;
+    background: rgb(9, 9, 88,0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    text-align: left;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+label {
+    margin: 5px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
 
+input,select{
+    margin: 5px;
+    padding: 10px;
+    font-size: 1.1em;
+    border: 2px solid #120751;
+    border-radius: 10px;
+}
+button{
+    margin: 10px;
+    padding: 15px;
+    background-color: #120751;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: white;
+    width: 400px;
+}
 footer{
     border-radius: 20px;
 	border: 3px solid #120751;
@@ -144,3 +189,4 @@ footer p{
     padding-right: 20px;
     font-variant-caps: small-caps;
 }
+

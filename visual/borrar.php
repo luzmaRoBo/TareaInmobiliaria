@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea 2</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
 </head>
 <body>
@@ -31,17 +28,9 @@
             <main>
                 <section id="resultados">
                     <p>
-                        <!-- hago la conexion con la base de datos-->
-                        <?php require_once "../logica/conexionBD.php";?>
+                        <!-- llamo al documento que realiza todas las acciones de instalar-->
+                        <?php require_once "../logica/borrarLog.php";?>
                     </p>
-                </section>
-                <section id="resultados">
-                    <h2>listado de inmuebles</h2>
-                    
-                        <?php
-                           require_once "../logica/listadoLog.php";
-                        ?>
-                    
                 </section>
             </main>
         </div>
