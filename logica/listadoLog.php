@@ -6,6 +6,7 @@
 
     //verifico si hay resultado y con echo digo que quieo mostar
     if($listado->num_rows > 0){
+        //empiezo mostrando la cabecera de la página
         echo "<table class='table table-hover table-bordered table-sm'>";
         echo "<thead>";
         echo "<tr class='table-primary'>
@@ -47,7 +48,7 @@
                     </form>   
                 </td>";
             echo "<td> 
-                     <form action='borrar.php' method='POST' style='display: inline;'>
+                     <form action='borrar.php' method='POST' onsubmit='return confirmarBorrado();' style='display: inline;'>
                         <input type='hidden' name='id' value='" . $fila['id'] . "'>
                         <button type='submit' class='btn btn-danger btn-sm' style='width: 36px; padding: 5px;'>
                             <i class='bi bi-trash'></i>
@@ -58,6 +59,9 @@
         }
             echo "</tbody>";
             echo "</table>";
+
+            //el boton de modificar y eliminar llevan un form que envia los datos por post para poder modificar o eliminar los datos
+            //además el boron de eliminar llama a una función javascript para confirmar la eliminacion del inmueble
 
     }else{
         echo "No se encontraron datos en la tabla inmuebles";

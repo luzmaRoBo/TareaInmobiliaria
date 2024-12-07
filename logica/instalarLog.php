@@ -7,6 +7,7 @@
     $passUsuario1 = "admin";
     $usuario2 = "usuario";
     $passUsuario2 = "usuario";
+    
 
     //borramos el usuario si ya existe
     $borrarUsuario1 = "DROP USER IF EXISTS '$usuario1@localhost'";

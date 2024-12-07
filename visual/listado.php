@@ -50,5 +50,11 @@
             <p>2º daw</p>
         </footer>
     </div>
+    <!-- script para confirmar si quiero eliminar el inmueble -->
+    <script>
+        function confirmarBorrado() {
+            return confirm("¿Estás seguro de que deseas eliminar este inmueble?");
+        }
+    </script>
 </body>
 </html>

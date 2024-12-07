@@ -28,6 +28,12 @@
             <main>
                 <section id="resultados">
                     <p>
+                        <!-- hago la conexion con la base de datos-->
+                        <?php require_once "../logica/conexionBD.php";?>
+                    </p>
+                </section>
+                <section id="resultados">
+                    <p>
                         <!-- llamo al documento que realiza todas las acciones de instalar-->
                         <?php require_once "../logica/borrarLog.php";?>
                     </p>

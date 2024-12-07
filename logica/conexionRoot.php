@@ -1,4 +1,5 @@
 <?php
+
     /*CREAMOS LA CONEXION CON MYSQL*/
     $servername = "localhost";
     $user = "root";
