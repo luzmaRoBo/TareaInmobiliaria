@@ -1,7 +1,7 @@
 <?php
     //verifico si enviamos datos por post
     if($_SERVER["REQUEST_METHOD"]=== "POST"){
-        //si hay envío recojo los datos enviados por post
+        //si hay envío recojo los datos enviados por post, evito la introduccion de caracteres especiales
         $localidad = htmlspecialchars($_POST['localidad']);
         $provincia = htmlspecialchars($_POST['provincia']);
         $direccion = htmlspecialchars($_POST['direccion']);

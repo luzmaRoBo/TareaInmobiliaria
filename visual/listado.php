@@ -39,6 +39,7 @@
                     <h2>listado de inmuebles</h2>
                     
                         <?php
+                        //requiero al archivo de logica para el listado
                            require_once "../logica/listadoLog.php";
                         ?>
                     

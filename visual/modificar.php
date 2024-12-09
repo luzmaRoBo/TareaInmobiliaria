@@ -38,6 +38,7 @@
                         <?php require_once "../logica/modificarLog.php";?>
                     </p>
                     <div id="formulario">
+                        <!--Creo el formulario para cojer los datos de inmuebles y podermodificarlos -->
                         <form action="modificar.php" method="post">
                             <!--  campo oculto para recibir id y mostrar datos en el formulario-->
                             <input type="hidden" name="id" value="<?php echo $inmueble['id']; ?>">

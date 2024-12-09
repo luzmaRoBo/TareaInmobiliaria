@@ -5,6 +5,7 @@
     $user = "admin";
     $pass = "admin";
     $bd = "inmobiliaria";
+
     
     $conexion = new mysqli($servername,$user,$pass,$bd);
     

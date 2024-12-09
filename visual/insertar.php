@@ -38,6 +38,7 @@
                         <?php require_once "../logica/insertarLog.php";?>
                     </p>
                     <div id="formulario">
+                        <!--Creo el formulario para introducir datos -->
                         <form action="insertar.php" method="post">
                             <label>Localidad</label>
                             <input type="text" name="localidad" required>

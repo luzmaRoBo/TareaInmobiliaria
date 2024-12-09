@@ -1,5 +1,5 @@
 <?php
-    /*CONECTAMOS CON LA BASE DE DATOS COMO ROOT */
+    /*REQUIERO LA CONEXION CON LA BASE DE DATOS COMO ROOT */
     require_once "conexionRoot.php";
 
     /*CREAMOS USUARIOS*/

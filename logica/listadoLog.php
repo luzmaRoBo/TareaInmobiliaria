@@ -1,8 +1,10 @@
 <?php
-    //hago la consulta para el lista
-    $consulta = "SELECT * FROM inmuebles";
-    //ejecuto la consulta del listado
-    $listado = $conexion->query($consulta);
+    //preparo la consulta
+    $consulta = $conexion->prepare("SELECT * FROM inmuebles");
+    //ejecuto la consulta
+    $consulta->execute();
+    //obtengo elresultado de la consulta y lo almaceno en lista
+    $listado = $consulta->get_result();
 
     //verifico si hay resultado y con echo digo que quieo mostar
     if($listado->num_rows > 0){

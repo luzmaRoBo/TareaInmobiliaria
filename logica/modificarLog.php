@@ -3,18 +3,25 @@
     //PRIMERO COJEMOS LOS DATOS DEL INMUEBLE PARA MOSTRARLOS EN EL FORMULARIO
     //verifico que envío el id del inmueble
     if(isset($_POST["id"]) && !empty($_POST["id"])){
-
+        //almaceno el id recibido por post
         $idRecibido = $_POST["id"];
 
-        //hago la consulta para obtener los datos
-        $consulta = "SELECT * FROM inmuebles WHERE id = $idRecibido";
-        $resultado = $conexion->query($consulta);
-
+        //preparo la consulta
+        $consulta = $conexion->prepare("SELECT * FROM inmuebles WHERE id = ?");
+        $consulta->bind_param("i",$idRecibido);
+        //si se ejecuta la consulta
+        if ($consulta->execute()) {
+            //Obtener el resultado
+            $resultado = $consulta->get_result();
+        }
+        //si el resultaqdo tiene mas de 0 lineas
         if($resultado->num_rows > 0){
+            //almaceno cada linea en inmueble
             $inmueble = $resultado->fetch_assoc();
         }else{
-            echo "No se ha encontrado ningún inmueble";
+            echo "No se ha encontrado ningun inmueble";
         }
+
     }else{
         echo "No has enviado nada por post";
     }
@@ -23,7 +30,7 @@
     //verifico que envío los datos nuevos del inmueble
     if(isset($_POST["idAct"]) && !empty($_POST["idAct"])){
 
-        //recojo los datos enviados por post
+        //recojo los datos enviados por post,convirtiendo caracteres especiales
         $id = $_POST["idAct"];
         $localidad = htmlspecialchars($_POST['localidad']);
         $provincia = htmlspecialchars($_POST['provincia']);
