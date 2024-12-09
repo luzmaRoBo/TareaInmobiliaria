@@ -3,6 +3,7 @@ Este proyecto forma parte de la tarea del primer trimestre de 2º DAW en el mód
 Está desarrollado principalmente en PHP para la lógica de servidor, con HTML y CSS para la interfaz visual.
 
 FUNCIONALIDADES DEL PROYECTO:
+
 INSTALAR:
 Creación de usuarios y asignación de permisos.
 Creación de la base de datos con una tabla de inmuebles.
