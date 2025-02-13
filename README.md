@@ -1,6 +1,6 @@
 Proyecto: Gestión de Inmobiliaria
 Este proyecto forma parte de la tarea del primer trimestre de 2º DAW en el módulo Desarrollo de Aplicaciones Web en Entorno Servidor. 
-Está desarrollado principalmente en PHP para la lógica de servidor, con HTML y CSS para la interfaz visual.
+Está desarrollado principalmente en PHP para la parte lógica y con HTML y CSS para la interfaz visual.
 
 FUNCIONALIDADES DEL PROYECTO:
 
